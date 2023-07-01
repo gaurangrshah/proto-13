@@ -1,8 +1,29 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": false,
-  "prettier.useEditorConfig": false,
-  "prettier.useTabs": false,
-  "prettier.configPath": ".prettierrc"
+  "importOrder": [
+    "^(react/(.*)$)|^(react$)",
+    "^(next/(.*)$)|^(next$)",
+    "^(next-auth/(.*)$)|^(next-auth$)",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^types$",
+    "",
+    "^@/lib/(.*)$",
+    "",
+    "^@/components/(.*)$",
+    "",
+    "^@/hooks/(.*)$",
+    "",
+    "^@/utils/(.*)$",
+    "^@/styles/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "importOrderBuiltinModulesToTop": true,
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "importOrderMergeDuplicateImports": true,
+  "importOrderCombineTypeAndValueImports": false,
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports"
+  ]
 }
